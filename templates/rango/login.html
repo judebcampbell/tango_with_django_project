@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 15.0px; font: 13.3px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.3px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 13.3px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 15.0px; font: 13.3px Times; color: #a90e1a; -webkit-text-stroke: #a90e1a}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; color: #0f7001; -webkit-text-stroke: 0px #0f7001}
+    span.s3 {font-kerning: none; color: #6a7f1f; -webkit-text-stroke: 0px #6a7f1f}
+    span.s4 {font-kerning: none; color: #535353; -webkit-text-stroke: 0px #535353}
+    span.s5 {font-kerning: none; color: #a90e1a; -webkit-text-stroke: 0px #a90e1a}
+    span.s6 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s7 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{% extends 'rango/base.html' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>{% load staticfiles %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% block title_block %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>Login<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">{% endblock %}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% block body_block %}<br>
+&lt;</span><span class="s2">h1</span><span class="s1">&gt;Login to Rango&lt;/</span><span class="s2">h1</span><span class="s1">&gt;<br>
+&lt;</span><span class="s2">form </span><span class="s3">id</span><span class="s4">=</span><span class="s5">"login_form" </span><span class="s3">method</span><span class="s4">=</span><span class="s5">"post" </span><span class="s3">action</span><span class="s4">=</span><span class="s5">"{% url 'rango:login' %}"</span><span class="s1">&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s6"><span class="Apple-tab-span">	</span></span><span class="s7">{% csrf_token %}<br>
+<span class="Apple-tab-span">	</span>Username: &lt;</span><span class="s2">input </span><span class="s3">type</span><span class="s4">=</span><span class="s1">"text" </span><span class="s3">name</span><span class="s4">=</span><span class="s1">"username" </span><span class="s3">value</span><span class="s4">=</span><span class="s1">"" </span><span class="s3">size</span><span class="s4">=</span><span class="s1">"50" </span><span class="s7">/&gt; &lt;</span><span class="s2">br </span><span class="s7">/&gt;<br>
+<span class="Apple-tab-span">	</span>Password: &lt;</span><span class="s2">input </span><span class="s3">type</span><span class="s4">=</span><span class="s1">"password" </span><span class="s3">name</span><span class="s4">=</span><span class="s1">"password" </span><span class="s3">value</span><span class="s4">=</span><span class="s1">"" </span><span class="s3">size</span><span class="s4">=</span><span class="s1">"50" </span><span class="s7">/&gt; &lt;</span><span class="s2">br </span><span class="s7">/&gt;<br>
+<span class="Apple-tab-span">	</span>&lt;</span><span class="s2">input </span><span class="s3">type</span><span class="s4">=</span><span class="s1">"submit" </span><span class="s3">value</span><span class="s4">=</span><span class="s1">"submit" </span><span class="s7">/&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">&lt;/</span><span class="s2">form</span><span class="s1">&gt;<br>
+{% endblock %}<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
